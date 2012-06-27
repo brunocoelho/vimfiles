@@ -227,14 +227,14 @@ if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
 
-    colorscheme railscasts
+    colorscheme peachpuff
     set guitablabel=%M%t
     set lines=40
     set columns=115
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme railscasts
+        colorscheme peachpuff
         set guifont=Monospace\ Bold\ 12
     endif
 
@@ -255,14 +255,14 @@ else
     "dont load csapprox if there is no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
 
-    "set railscasts colorscheme when running vim in gnome terminal
+    "set peachpuff colorscheme when running vim in gnome terminal
     if $COLORTERM == 'gnome-terminal'
         set term=gnome-256color
-        colorscheme railscasts
+        colorscheme peachpuff
     else
         if $TERM == 'xterm'
             set term=xterm-256color
-            colorscheme railscasts
+            colorscheme peachpuff
         else
             colorscheme default
         endif
